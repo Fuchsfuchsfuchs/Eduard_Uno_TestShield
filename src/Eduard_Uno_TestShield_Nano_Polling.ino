@@ -51,9 +51,28 @@ void setup() {
 }
 
 void loop() {
-  
-  for(int pin = 2; pin < 19; pin++){
-    delay(20);
+
+    // Schritt 1 
+
+   // D7 = PD7 auf HIGH
+  PORTD |= (1 << PD7);
+
+  // D8–D12 = PB0–PB4 auf HIGH
+  PORTB |= 0b00011111;
+
+    // Schritt 2 Warten auf Antwort von IoT Board
+
+  // Warte solange, bis alle 6 Pins HIGH sind
+  while ((PINC & 0b00111111) != 0b00111111) {
+    
+    // TODO Neopixel Einbindung!!!!
+    
+    }
+
+    // Schritt 3 
+
+  for(int pin = 1; pin < 6; pin++){
+     delay(20);
     if(digitalRead(pin) == HIGH){
       writeEasyNeoPixel(pin, 0, 16, 0);
     }else{
