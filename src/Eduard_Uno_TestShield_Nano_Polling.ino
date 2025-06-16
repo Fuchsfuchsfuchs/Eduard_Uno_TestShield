@@ -14,17 +14,26 @@
 #define LED_COUNT 25
 
 void setup() {
-  
-  
-// All digital Pins set to Input (DDRx = 0)
-  DDRB = 0x00;                      // Pins D8–D13
-  DDRC = 0x00;                      // A0–A5
-  DDRD = 0x00;                      // Pins D0–D7
 
-// Deactivate internal Pull Up Resistors
-  PORTB = 0x00;
-  PORTC = 0x00;
-  PORTD = 0x00; 
+// ==== INPUT PINS ====
+
+  // PORTC (A0–A5 = PC0–PC5) als Input
+  DDRC &= ~0b00111111;  // PC0–PC5 (A0–A5) als Input
+  PORTC &= ~0b00111111; // Kein Pullup
+
+  // PORTD (D1–D6 = PD1–PD6) als Input
+  DDRD &= ~0b11111110;  // PD1–PD6 als Input (lassen PD0 in Ruhe)
+  PORTD &= ~0b11111110; // Kein Pullup an PD1–PD6
+
+  // ==== OUTPUT PINS ====
+
+  // PORTD: D7 = PD7
+  DDRD |= (1 << PD7);   // PD7 als Output
+  PORTD &= ~(1 << PD7); // LOW
+
+  // PORTB: D8–D12 = PB0–PB4
+  DDRB |= 0b00011111;   // PB0–PB4 als Output
+  PORTB &= ~0b00011111; // Alle LOW
 
 // Initialize NeoPixel Matrix
   setupEasyNeoPixels(LED_PIN, LED_COUNT);
