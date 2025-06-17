@@ -10,6 +10,7 @@
 
 #include <EasyNeoPixels.h>          // Include an easier way to select certain LEDs etc
 
+
 #define LED_PIN 13
 #define LED_COUNT 25
 
@@ -52,25 +53,20 @@ void setup() {
 
 void loop() {
 
-    // Schritt 1 
-
-   // D7 = PD7 auf HIGH
-  PORTD |= (1 << PD7);
-
-  // D8–D12 = PB0–PB4 auf HIGH
-  PORTB |= 0b00011111;
-
-    // Schritt 2 Warten auf Antwort von IoT Board
-
-  // Warte solange, bis alle 6 Pins HIGH sind
-  while ((PINC & 0b00111111) != 0b00111111) {
+    // Schritt 1 - Warten auf RX = HIGH dann Programmstart
     
-    // TODO Neopixel Einbindung!!!!
-    
-    }
+  while (digitalRead(0) == LOW) {
+    // warten während PIN = RX HIGH ist
+  }
 
-    // Schritt 3 
+  writeEasyNeoPixel(3, 0, 16, 0);
+  
+    // Schritt 2
 
+  // IoT Pin D2 - D7 HIGH und Ino Pin D1 - D6 Input und Abfrage
+
+  delay(20);
+  
   for(int pin = 1; pin < 6; pin++){
      delay(20);
     if(digitalRead(pin) == HIGH){
@@ -79,4 +75,21 @@ void loop() {
       writeEasyNeoPixel(pin, 16, 0, 0);
     }
   }
+  
+    // Schritt 3 
+
+   // D7 = PD7 auf HIGH
+  PORTD |= (1 << PD7);
+
+  // D8–D12 = PB0–PB4 auf HIGH
+  PORTB |= 0b00011111;
+
+    // Schritt 3 Warten auf Antwort von IoT Board
+
+  // Warte solange, bis alle 6 Pins HIGH sind
+  while ((PINC & 0b00111111) != 0b00111111) {
+    
+    // TODO Neopixel Einbindung!!!!
+    
+    }
 }
