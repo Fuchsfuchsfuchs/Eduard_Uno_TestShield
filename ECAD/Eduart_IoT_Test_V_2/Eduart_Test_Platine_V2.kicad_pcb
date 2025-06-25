@@ -10854,6 +10854,18 @@
 		(layer "Edge.Cuts")
 		(uuid "c4d16fea-c118-4f3a-bb57-f3381c4cc3a8")
 	)
+	(gr_text "D4"
+		(at 62.4 55.6 0)
+		(layer "Dwgs.User")
+		(uuid "00fc3f08-07af-4ae3-b86a-df5ef70c2898")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "JLCJLCJLCJLC"
 		(at 63.5 88 0)
 		(layer "Dwgs.User")
@@ -10862,6 +10874,42 @@
 			(font
 				(size 1 1)
 				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D1"
+		(at 50.2 55.6 0)
+		(layer "Dwgs.User")
+		(uuid "18182175-19f3-4e01-b931-05692afa6932")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A1"
+		(at 100.4 63.4 0)
+		(layer "Dwgs.User")
+		(uuid "32bf5173-7547-4006-97f5-445d4fc1f1d3")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D3"
+		(at 50.2 71.6 0)
+		(layer "Dwgs.User")
+		(uuid "4415e60b-ca1b-4a2b-8c38-11f37b9893d8")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
 			)
 			(justify left bottom)
 		)
@@ -10879,6 +10927,150 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "10"
+		(at 87.8 55.6 0)
+		(layer "Dwgs.User")
+		(uuid "50f96c3b-b40f-4e2c-9973-63009e97aec9")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D6"
+		(at 62.4 71.6 0)
+		(layer "Dwgs.User")
+		(uuid "64a5813e-6d33-464c-87eb-1b885f9f21dd")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A3"
+		(at 112.6 55.4 0)
+		(layer "Dwgs.User")
+		(uuid "78bdf57d-0102-4c5e-8e32-b39544f657ab")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D7"
+		(at 75.2 55.6 0)
+		(layer "Dwgs.User")
+		(uuid "8b474622-2da4-46ab-bcad-eb9f12df76aa")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A5"
+		(at 112.6 71.2 0)
+		(layer "Dwgs.User")
+		(uuid "935e5a1d-395f-4c2b-9681-e24bf6c5cbe3")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D5"
+		(at 62.4 63.6 0)
+		(layer "Dwgs.User")
+		(uuid "95395b46-6954-498e-8baa-7c24ae5b912c")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A2"
+		(at 100.4 71.2 0)
+		(layer "Dwgs.User")
+		(uuid "95ef7af3-01f6-4df7-b8fe-49791f191e08")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A0"
+		(at 100.4 55.6 0)
+		(layer "Dwgs.User")
+		(uuid "9b7d50e7-cdce-444e-9dac-5b507b62f03d")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D9"
+		(at 75.2 71.4 0)
+		(layer "Dwgs.User")
+		(uuid "9c077b67-9e05-4efd-a756-363acbd2aef8")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D2"
+		(at 50.2 63.6 0)
+		(layer "Dwgs.User")
+		(uuid "a7e862a5-b08a-406b-bffa-28d306466515")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "A4"
+		(at 112.6 63.2 0)
+		(layer "Dwgs.User")
+		(uuid "ab6dbf8a-e573-4cc9-87a4-07ae332d0f54")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "11"
+		(at 87.8 63.4 0)
+		(layer "Dwgs.User")
+		(uuid "b0f79d41-78dd-4274-b3f4-32601d2f3c22")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "EduArt"
 		(at 97.5 79 0)
 		(layer "Dwgs.User")
@@ -10888,6 +11080,30 @@
 				(size 3 3)
 				(thickness 0.6)
 				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "12"
+		(at 87.8 71.2 0)
+		(layer "Dwgs.User")
+		(uuid "c0a736dc-a0de-4940-9fbe-8d29df651334")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D8"
+		(at 75.2 63.6 0)
+		(layer "Dwgs.User")
+		(uuid "c5d2df89-0c8b-4b64-98c0-880d6665a8e8")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
 			)
 			(justify left bottom)
 		)
@@ -12873,7 +13089,7 @@
 		)
 		(polygon
 			(pts
-				(xy 50 45) (xy 50 99) (xy 126 99) (xy 126 45) (xy 50 45)
+				(xy 50 45) (xy 50 99) (xy 126 99) (xy 126 45)
 			)
 		)
 		(filled_polygon
